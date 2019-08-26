@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SendCircleActivity">
+    <TextView
+        android:id="@+id/sned_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center"
+        android:text="发布圈子"
+        android:background="#E81010"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:id="@+id/btn_send"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/release_img" />
+    <EditText
+        android:id="@+id/send_edit"
+        android:layout_below="@+id/sned_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180"
+        android:layout_margin="10dp"
+        android:padding="@dimen/dp_10"
+        android:gravity="left|top"
+        android:hint="请发表你此时的想法 . . ."
+        android:background="@drawable/edit_send_bg"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/send_recy"
+        android:layout_below="@+id/send_edit"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/btn_jia"
+        android:layout_below="@+id/send_edit"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="@dimen/dp_105"
+        android:scaleType="fitXY"
+        android:src="@mipmap/jia_img"
+        android:layout_height="@dimen/dp_105" />
+
+</RelativeLayout>

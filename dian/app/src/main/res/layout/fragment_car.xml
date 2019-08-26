@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/car_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center"
+        android:text="@string/car_title"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/btn_edit"
+        android:layout_width="@dimen/dp_55"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="编辑"
+        android:textSize="@dimen/sp_16" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/car_recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_title" />
+
+    <include
+        layout="@layout/item_car_bottom"/>
+</RelativeLayout>
